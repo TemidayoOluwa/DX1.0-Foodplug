@@ -1,0 +1,267 @@
+
+
+/* ==== major fixes starts starts here */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 1500px;
+    font-family: 'Lato', sans-serif;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+/* ==== major fixes starts ends here */
+
+/* ==== Reusables starts starts here */
+.btn{
+    padding: 16px 20px;
+}
+.btn-red{
+    background: var(--main-color);
+    color: var(--white-color);
+    border: 2px solid var(--main-color);
+}
+.btn-red:hover{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+.btn-light{
+    background: var(--white-color);
+    border: 2px solid var(--main-color);
+}
+.btn-light:hover{
+    color: var(--main-color);
+}
+/* ==== Reusables starts ends here */
+
+/* ==== Header section starts here */
+ header{
+    /* border: 3px solid blue; */
+    position: fixed;
+    width: 100%;
+    background: var(--white-color);
+} 
+.nav-desktop{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.desktop-linkcontainer ul{
+    list-style: none;
+    /* border: 3px solid green; */
+    display: flex;
+    
+     
+}
+.desktop-linkcontainer ul li{
+    padding: 15px 20px;
+    border:2px solid transparent;
+    color: var(--main-color);
+}
+.desktop-linkcontainer li:hover{
+    border: 2px solid var(--main-color);
+}
+.desktop-logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--white-color);
+    background: var( --main-color);
+    font-size: 50px;
+    position: absolute;
+    left:60px;
+}
+.desktop-linkcontainer{
+    display: flex;
+    align-items: center;
+    /* border: 3px solid yellow; */
+    /* width: 350px; */
+}
+.nav-mobile{
+   
+    display: none;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    background: var(--main-color);
+
+}
+.nav-brand{
+    /* border: 3px solid blue; */
+    display: flex;
+    align-items:center ;
+    font-size: 25px;
+    color: var(--white-color);
+}
+.nav-mobile span{
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.mobile-logo{
+    border: 2px solid var(--white-color);
+}
+
+.hamburger-container{
+    /* border: 3px solid purple; */
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+}
+/* ======= ========== */
+.menu{
+    width: 100%;
+    height: 3px;
+    background: var(--white-color);
+    position: relative;
+}
+.menu::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: yellow;
+    position: absolute;
+    transform: translateY(-10px);
+
+}
+.menu::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: red;
+    position: absolute;
+    transform: translateY(10px);
+
+}
+.showburger .menu{
+    background: transparent;
+}
+.showburger .menu::before{
+    transform: rotate(45deg);
+}
+.showburger .menu::after{
+    transform: rotate(-45deg);
+}
+/* ====== ======= */
+/* ==== Header section ends here */
+
+/* ==== Header banner starts here */
+.header-banner-section{
+    /* border: 3px solid tomato; */
+    /* height: 450px; */
+    background: url("./img/banner.jpg");
+    background-size: cover;
+}
+.banner-content-container{
+    /* border: 3px solid black; */
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    
+}
+
+.banner-text-container{
+    /* border: 3px solid green; */
+    width: 50%;
+}
+.banner-content-container h1{
+    font-size: 45px;
+    color: var( --main-color-dark);
+    line-height: 1.1;
+}
+.banner-content-container p{
+    line-height: 1.6;
+    margin: 20px 0;
+
+}
+.banner-button-2{
+    margin: 0 0 0 15px;
+}
+.banner-icons{
+    margin: 0 0 0 10px;
+}
+/* ==== Header banner ends here */
+
+/* ==== Header counter ends here */
+.header-counter-section{
+    background: var(--main-color);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-counter{
+    
+    width:180px;
+    color: var(--white-color);
+    text-align: center;
+}
+.header-counter p{
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+/* ==== Header counter ends here */
+
+/* ==== About us section starts here */
+/* .about-us{
+    border: 3px solid tomato;
+    height: 400px;
+} */
+.about-us-container{
+    width: 90%;
+    height: 100%;
+    padding: 30px 0;
+    margin: 0 auto;
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-us-cards-img{
+/* border: 3px solid green; */
+width:48%;
+height: 350px;
+border-radius: 25px;
+overflow: hidden;
+
+
+}
+.about-us-cards-text{
+/* border: 3px solid purple; */
+width:48%;
+}
+
+.about-us-cards-text h2{
+    border-right: 5px solid var(--main-color);
+    border-left: 5px solid var(--main-color);
+    font-size: 28px;
+    background: var(--light-text-color);
+    color: var(--main-color);
+    padding: 15px;
+}
+.about-us-cards-text p{
+    margin: 20px 0;
+}
+.about-us-cards-text ul{
+    list-style: none;
+    margin: 20px 0;
+}
+.text-icon{
+    margin: 0 10px 0 0;
+    color: var(--main-color);
+}
+
+/* ==== About us section ends here */
+
+
+
+/* ==== Header banner ends here */
+/* ==== Header banner ends here */
