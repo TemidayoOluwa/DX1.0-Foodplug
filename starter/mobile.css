@@ -1,4 +1,4 @@
-@media screen and (max-width:851px){
+@media screen and (max-width:1100px){
     /* Header section starts here  */
     
     .nav-desktop{
@@ -31,4 +31,44 @@
         margin: 20px 0;
      }
      /* About us section ends here  */
+
+     /* explore foods section ends here  */
+     .food-card-item{
+         margin: 20px 0;
+     }
+     /* explore foods section ends here  */
+
+     /* ==== FAQ SECTION starts here */
+      .faq-item{
+         min-width: 100%;
+         padding: 0 10px;
+      }
+      /* ==== FAQ SECTION ends here */
+
+      /* ==== parallax section starts here */
+      .parallax{
+         text-align: center;
+         padding: 0 25px;
+         flex-direction: column;
+      }
+      /* ==== parallax section ends here */
+
+      /* ==== cta section starts here */
+      .cta-section h2{
+         padding: 0 10px;
+      }
+      /* ==== cta section ends here */
+
+      /* ==== footer section starts here */
+      footer{
+         flex-direction: column;
+      }
+      .footer-icons-container{
+         margin: 20px 0;
+         
+      }
+      footer p{
+         text-align: center;
+      }
+      /* ==== footer section ends here */
 }
