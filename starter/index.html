@@ -22,10 +22,10 @@
             <div class="desktop-linkcontainer">
 
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Explore Food</li>
-                    <li>FAQ</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#explorefoods">Explore Food</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
                 <button class="btn btn-red">+1(000) XXX-XXXX</button>
             </div> 
@@ -39,6 +39,18 @@
             </div>
             <div class="hamburger-container " onclick="addandremove()">
                 <div class="menu"></div>
+            </div>
+            <div class="mobile-links-container">    
+                <div class="mobile-links-content">
+    
+                    <ul>
+                        <li><a href="#" class="active-links">Home</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#explorefoods">Explore Food</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                    <button class="btn ">+1(000) XXX-XXXX</button>
+                </div> 
             </div>
         </nav>
     </header>
@@ -77,10 +89,11 @@
                 <p>globes</p>
             </div>
         </div>
+        
         <!-- Header counter section ends here -->
 
         <!-- About Us section starts here -->
-        <div class="about-us">
+        <div class="about-us" id="aboutus">
             <div class="about-us-container">
                 <div class="about-us-cards-img">
                     <img src="./img/about1.png" alt="">
@@ -128,7 +141,7 @@
         <!-- wave button section endss here -->
 
         <!-- explore foods section starts here -->
-        <div class="explore-foods-section">
+        <div class="explore-foods-section" id="explorefoods">
             <h2>Explore Our Foods</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse culpa, ipsam consequuntur adipisci tenetur architecto dicta necessitatibus voluptatibus aperiam eum vel voluptate dolorum quas? Minima in quasi possimus eius blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse culpa, ipsam consequuntur adipisci tenetur architecto dicta necessitatibus voluptatibus aperiam eum vel voluptate dolorum quas? Minima in quasi possimus eius blanditiis?</p>
             <div class="food-card-container">
@@ -180,7 +193,7 @@
         <!-- explore foods section endss here -->
 
         <!-- FAQ section starts here -->
-        <DIV class="faq-section">
+        <DIV class="faq-section" id="faq">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-container">
                 <div class="faq-item">

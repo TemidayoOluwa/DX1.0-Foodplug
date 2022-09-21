@@ -11,7 +11,9 @@ var ourbody = document.querySelector(".ourpagebody")
 // ourbody.style.background = "black"
 
 var hamburger = document.querySelector(".hamburger-container")
+var mobilelinkscontainer = document.querySelector(".mobile-links-container")
 
 function addandremove(){
     hamburger.classList.toggle("showburger")
+    mobilelinkscontainer.classList.toggle("showmobilelinks")
 }

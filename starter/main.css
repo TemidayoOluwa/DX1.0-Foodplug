@@ -14,6 +14,9 @@ img{
     height: 100%;
     width: 100%;
 }
+html{h
+    scroll-behavior:smooth;
+}
 /* ==== major fixes starts ends here */
 
 /* ==== Reusables starts starts here */
@@ -59,9 +62,15 @@ img{
      
 }
 .desktop-linkcontainer ul li{
-    padding: 15px 20px;
     border:2px solid transparent;
     color: var(--main-color);
+}
+.desktop-linkcontainer ul a{
+    text-decoration: none;
+    color: var(--main-color);
+    display: block;
+    padding: 10px 20px;
+    
 }
 .desktop-linkcontainer li:hover{
     border: 2px solid var(--main-color);
@@ -105,6 +114,7 @@ img{
     margin-left: 10px;
 }
 .mobile-logo{
+    padding: 5px;
     border: 2px solid var(--white-color);
 }
 
@@ -114,6 +124,7 @@ img{
     width: 30px;
     display: flex;
     align-items: center;
+    z-index: 100;
 }
 /* ======= ========== */
 .menu{
@@ -126,7 +137,7 @@ img{
     content: "";
     width: 100%;
     height: 3px;
-    background: yellow;
+    background: var(--white-color);
     position: absolute;
     transform: translateY(-10px);
 
@@ -135,7 +146,7 @@ img{
     content: "";
     width: 100%;
     height: 3px;
-    background: red;
+    background: var(--white-color);
     position: absolute;
     transform: translateY(10px);
 
@@ -145,11 +156,53 @@ img{
 }
 .showburger .menu::before{
     transform: rotate(45deg);
+    background: var(--main-color);
 }
 .showburger .menu::after{
     transform: rotate(-45deg);
+    background: var(--main-color);
 }
 /* ====== ======= */
+.mobile-links-container{
+    width: 50%;
+    height: 100%;
+    background: var(--main-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* display: none; */
+    transform: translateX(102%);
+    transition: all 0.4s ease;
+    z-index: 3;
+}
+.showmobilelinks{
+    /* display: block; */
+    transform: translateX(0);
+}
+.mobile-links-content ul{
+    list-style: none;
+}
+.mobile-links-content a{
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 23px 20px;
+}
+.mobile-links-content a:hover{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+.mobile-links-content button{
+    background: transparent;
+    margin: 0 0 0 20px;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+.mobile-links-content .active-links{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
 /* ==== Header section ends here */
 
 /* ==== Header banner starts here */
